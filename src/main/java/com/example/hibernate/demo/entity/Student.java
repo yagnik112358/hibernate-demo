@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class Student {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
     private int id;
     @Column(name = "FirstName")
@@ -58,4 +58,6 @@ public class Student {
     public void setEmail(String email) {
         this.email = email;
     }
+
+
 }
